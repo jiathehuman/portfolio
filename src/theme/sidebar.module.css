@@ -1,0 +1,108 @@
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.activeLink {
+  background-color: rgb(63, 63, 63);
+  color: black;
+  padding: 0 1rem;
+}
+
+.hamburger {
+  display: none; 
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30%;
+  background-color: #222;
+  color: white;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  transition: left 3s ease;
+  z-index: 1100;
+}
+
+.sidebar button {
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.sidebar a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #444;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive: show hamburger, hide inline links */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}

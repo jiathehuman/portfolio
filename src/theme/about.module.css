@@ -1,0 +1,38 @@
+h1 {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    z-index: 1;
+}
+
+.profileCard {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: black;
+}
+
+.info {
+    margin: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experienceTable {
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    word-wrap: break-word; 
+    padding: 0.4rem 0;
+}

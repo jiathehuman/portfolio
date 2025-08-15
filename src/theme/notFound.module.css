@@ -1,0 +1,17 @@
+.background {
+    margin-top: 3rem;
+    width: 100dvw;
+    height: 1000dvh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.content {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    margin: auto;
+}
